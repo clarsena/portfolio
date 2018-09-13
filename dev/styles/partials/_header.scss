@@ -1,0 +1,47 @@
+.header {
+    background: url('../../assets/hero_image.jpg');
+    min-height: 100vh;
+}
+
+.topNav {
+    width: 90%;
+    padding-top: 30px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(225, 225, 225);
+    position: relative;
+    z-index: 3
+}
+
+.navBar {
+    display: flex;
+    flex-direction: flex-end;
+    flex: 0 1 90%;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    justify-content: flex-end;
+    text-align: center;
+    li {
+        border-bottom: 1px solid none;
+        padding-bottom: 10px;
+        transition: all .4s ease-in;
+        margin-left: 40px;
+        letter-spacing: 2px;
+        &:hover {
+            color: var(--primary);
+            border-bottom: 1px solid var(--primary);
+        }
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(3, 3, 3, 0.6);
+    z-index: 2;
+}
