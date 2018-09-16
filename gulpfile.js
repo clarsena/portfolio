@@ -6,13 +6,18 @@ const source = require('vinyl-source-stream');
 const buffer = require('vinyl-buffer');
 const notify = require('gulp-notify');
 const browserSync = require('browser-sync');
+const wait = require('gulp-wait');
 const reload = browserSync.reload;
 
 gulp.task('styles', () => {
     return gulp.src('./dev/styles/**/*.scss')
+        .pipe(wait(500))
         .pipe(sass().on('error', sass.logError))
+        .pipe(wait(500))
         .pipe(concat('style.css'))
+        .pipe(wait(500))
         .pipe(gulp.dest('./public/styles'))
+        .pipe(wait(500))
         .pipe(reload({stream: true}));
 });
 

@@ -1,5 +1,8 @@
+//  START OF HEADER STYLES
+
 .header {
     background: url('../../assets/hero_image.jpg');
+    background-size: cover;
     min-height: 100vh;
 }
 
@@ -10,7 +13,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: rgb(225, 225, 225);
+    color: var(--white);
     position: relative;
     z-index: 3
 }
@@ -19,19 +22,26 @@
     display: flex;
     flex-direction: flex-end;
     flex: 0 1 90%;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     text-transform: uppercase;
     justify-content: flex-end;
     text-align: center;
     li {
-        border-bottom: 1px solid none;
-        padding-bottom: 10px;
-        transition: all .4s ease-in;
+        // padding-bottom: 10px;
         margin-left: 40px;
         letter-spacing: 2px;
-        &:hover {
-            color: var(--primary);
-            border-bottom: 1px solid var(--primary);
+        a {
+            padding: 10px;
+            color: rgb(225, 225, 225);
+            border-bottom: 1px solid transparent;
+            transition: all .4s ease-in;
+            &:visited {
+                color: var(--white);
+            }
+            &:hover {
+                color: var(--primary);
+                border-color: var(--primary);
+            }
         }
     }
 }
@@ -42,6 +52,39 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background: rgba(3, 3, 3, 0.6);
+    background: rgba(2, 10, 19, 0.7);
     z-index: 2;
 }
+
+.headerContent {
+    position: relative;
+    z-index: 3;
+    width: 60%;
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+    color: var(--primary);
+    margin: 0 auto;
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.typedText {
+    margin-bottom: 25px;
+}
+
+.headerName {
+    font-size: 5.0rem;
+    margin: 0 0 10px 0;
+}
+
+.headerTitle {
+    font-size: 4.0rem;
+    color: var(--white);
+    font-weight: 200;
+}
+
+//  END OF HEADER STYLES

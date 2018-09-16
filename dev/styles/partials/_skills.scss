@@ -1,0 +1,41 @@
+.skills {
+    height: 100vh;
+    background: url('../../../assets/texture.jpg');
+    .wrapper{
+        height: 100vh;
+    }
+}
+
+.skillsContainer {
+    padding: 50px;
+    width: 100%;
+    color: var(--black);
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 75px);
+    grid-gap: 50px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 7.5rem;
+    transition: all 0.4s ease-in;
+    &:hover {
+        color: var(--primary);
+        p {
+            opacity: 1;
+            color: var(--black);
+        }
+    }
+    P {
+        font-size: 2.0rem;
+        font-family: "Lato", sans-serif;
+        margin: 10px 0;
+        opacity: 0;
+        transition: all 0.4s ease-in;
+        &:last-child {
+            font-weight: 400;
+        }
+    }
+}

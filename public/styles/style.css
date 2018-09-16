@@ -183,7 +183,8 @@ template {
   overflow: hidden; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 ul {
   list-style: none; }
@@ -192,11 +193,54 @@ a {
   text-decoration: none; }
 
 body {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-family: "Lato", sans-serif; }
+
+:root {
+  --primary: rgb(22, 116, 209);
+  --secondary: rgb(46, 139, 233);
+  --white: rgb(250, 250, 250);
+  --black: rgb(17, 17, 17); }
+
+body {
+  background-color: var(--black);
+  color: var(--white); }
+
+.wrapper {
+  max-width: 1170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-evenly; }
+
+.button {
+  width: 180px;
+  height: 50px;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: var(--primary);
+  border: none;
+  font-weight: 600;
+  transition: all 0.5s ease-in; }
+  .button:hover {
+    background-color: var(--white);
+    color: var(--primary); }
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary); }
+
+h3 {
+  text-align: center;
+  font-size: 5.0rem;
+  text-transform: uppercase;
+  letter-spacing: 2.0px; }
 
 .header {
   background: url("../../assets/hero_image.jpg");
+  background-size: cover;
   min-height: 100vh; }
 
 .topNav {
@@ -206,7 +250,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #e1e1e1;
+  color: var(--white);
   position: relative;
   z-index: 3; }
 
@@ -214,19 +258,23 @@ body {
   display: flex;
   flex-direction: flex-end;
   flex: 0 1 90%;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
   justify-content: flex-end;
   text-align: center; }
   .navBar li {
-    border-bottom: 1px solid black;
-    padding-bottom: 10px;
-    transition: all .4s ease-in;
     margin-left: 40px;
-    letter-spacing: 2.5px; }
-    .navBar li:hover {
-      color: var(--primary);
-      border-bottom: 1px solid var(--primary); }
+    letter-spacing: 2px; }
+    .navBar li a {
+      padding: 10px;
+      color: #e1e1e1;
+      border-bottom: 1px solid transparent;
+      transition: all .4s ease-in; }
+      .navBar li a:visited {
+        color: var(--white); }
+      .navBar li a:hover {
+        color: var(--primary);
+        border-color: var(--primary); }
 
 .overlay {
   position: absolute;
@@ -234,17 +282,106 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
-  background: rgba(3, 3, 3, 0.6);
+  background: rgba(2, 10, 19, 0.7);
   z-index: 2; }
 
-:root {
-  --primary: rgb(22, 116, 209)
-; }
-
-body {
-  background-color: black; }
-
-.wrapper {
-  max-width: 1170px;
+.headerContent {
+  position: relative;
+  z-index: 3;
+  width: 60%;
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  color: var(--primary);
+  margin: 0 auto;
+  min-height: 85vh;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end; }
+
+.typedText {
+  margin-bottom: 25px; }
+
+.headerName {
+  font-size: 5.0rem;
+  margin: 0 0 10px 0; }
+
+.headerTitle {
+  font-size: 4.0rem;
+  color: var(--white);
+  font-weight: 200; }
+
+.aboutMe {
+  height: 100vh;
+  background-color: var(--white);
+  color: var(--black);
+  background: url("../../../assets/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat; }
+  .aboutMe .wrapper {
+    justify-content: space-evenly;
+    height: 100vh; }
+
+.aboutMeInfo {
+  padding: 50px;
+  box-shadow: 1px 0px 3px 3px var(--secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .aboutMeInfo img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 25px;
+    display: block; }
+  .aboutMeInfo .aboutMeText {
+    flex: 0 1 calc(70% - 50px); }
+    .aboutMeInfo .aboutMeText p {
+      margin-bottom: 10px; }
+      .aboutMeInfo .aboutMeText p:last-child {
+        margin-bottom: 0; }
+
+.toSkills:hover {
+  background-color: var(--black);
+  color: var(--white); }
+
+.skills {
+  height: 100vh;
+  background: url("../../../assets/texture.jpg"); }
+  .skills .wrapper {
+    height: 100vh; }
+
+.skillsContainer {
+  padding: 50px;
+  width: 100%;
+  color: var(--black);
+  background-color: var(--white);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 75px);
+  grid-gap: 50px;
+  text-align: center; }
+
+.logo {
+  font-size: 7.5rem;
+  transition: all 0.4s ease-in; }
+  .logo:hover {
+    color: var(--primary); }
+    .logo:hover p {
+      opacity: 1;
+      color: var(--black); }
+  .logo P {
+    font-size: 2.0rem;
+    font-family: "Lato", sans-serif;
+    margin: 10px 0;
+    opacity: 0;
+    transition: all 0.4s ease-in; }
+    .logo P:last-child {
+      font-weight: 400; }
+
+.portfolio {
+  background-color: var(--white);
+  min-height: 100vh; }
+  .portfolio .wrapper {
+    min-height: 100vh; }

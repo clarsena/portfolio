@@ -8,27 +8,96 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
 		crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700" rel="stylesheet"> 
-		<link rel="stylesheet" href="public/styles/style.css">
+		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		<link rel="stylesheet" href="./public/styles/animate.css">
+		<link rel="stylesheet" href="./public/styles/style.css">
 	</head>
 
 	<body>
+		<!-- START OF HEADER SECTION -->
 		<header class="header">
 			<div class="overlay"></div>
+			<!-- START OF TOP NAV -->
 			<nav class="topNav">
-				<img src="assets/logo.png" alt="Site Logo">
+				<img src="./assets/logo.png" alt="Site Logo">
 				<ul class="navBar">
-					<li>Home</li>
-					<li>About Me</li>
-					<li>Skills</li>
-					<li>Portfolio</li>
-					<li>Blog</li>
-					<li>Contact</li>
+					<li><a href="#">Home</a></li>
+					<li><a href="#aboutMe">About Me</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#blog">Blog</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
+			<!-- END OF TOP NAV -->
+			<div class="headerContent">
+				<div class="typedText">
+					<h1 class="headerName" id="typed-name"></h1>
+					<h2 class="headerTitle" id="typed-title"></h2>
+				</div>
+				<a href="#aboutMe"><button class="button toAbout">Read More</button></a>
+			</div>
 		</header>
+		<!-- END OF HEADER SECTION -->
+
+		<!-- START OF ABOUT ME SECTION -->
+		<section class="aboutMe" id="aboutMe">
+			<div class="wrapper">
+				<h3>About Me</h3>
+				<figure class="aboutMeInfo wow fadeIn">
+					<img src="./assets/headshot.jpg" alt="">
+					<div class="aboutMeText">
+						<p> Hi, I'm Christopher! I'm a front-end web developer located in the Mississauga area. Before I dove head-first into my passion for coding, I was a Call Center Manager at a market research company. My time there taught me not only time management and multi-tasking skills but also how to manage a team and work better with others. I have always loved problem solving and logic puzzles, so I found the transition into coding to be a natural fit for me. I've been fascinated with computers and tech world since I was a little kid and cannot wait to continue my learning and growing in the web development world.</p>
+
+						<p>When I'm not coding, I can be found in the kitchen whipping up a new dish or baking some tasty treats, spending time with my wife and kids or practicing my photography skills.</p>
+
+						<p>I look forward to joining a team that shares my passion for coding and that will continue to push my to acheive to reach new heights.     
+						</p>
+					</div>
+				</figure>
+				<a href="#skills"><button class="button toSkills">Read More</button></a>
+			</div>
+		</section>
+		<!-- END OF ABOUT ME SECTION -->
+
+		<!-- START OF SKILLS SECTION -->
+		<section class="skills" id="skills">
+				<div class="wrapper">
+					<h3 class="wow fadeInLeft">Skills / Tools</h3>
+					<div class="skillsContainer wow fadeInRight">
+						<i class="devicon-css3-plain logo"><p>CSS3</p></i>
+						<i class="devicon-html5-plain logo"><p>HTML5</p></i>
+						<i class="devicon-javascript-plain logo"><p>Javascript</p></i>
+						<i class="devicon-jquery-plain logo"><p>jQuery</p></i>
+						<i class="devicon-react-original logo"><p>React</p></i>
+						<i class="devicon-git-plain logo"><p>Git</p></i>
+						<i class="devicon-github-plain logo"><p>Github</p></i>
+						<i class="devicon-gulp-plain logo"><p>Gulp</p></i>
+						<i class="devicon-sass-original logo"><p>SASS</p></i>
+						<i class="devicon-visualstudio-plain logo"><p>VS Code</p></i>
+						<i class="devicon-codeigniter-plain logo"><p>Firebase</p></i>
+						<i class="devicon-slack-plain logo"><p>Slack</p></i>
+						<i class="devicon-trello-plain logo"><p>Trello</p></i>
+						<i class="fas fa-mobile-alt logo"><p>Responsive Design</p></i>
+					</div>
+					<a href="#portfolio" class="wow fadeInLeft"><button class="button toPortfolio">Read More</button></a>
+				</div>
+		</section>
+		<!-- END OF SKILLS SECTION -->
+		<!-- START OF PORTFOLIO SECTION -->
+		<section class="portfolio" id="portfolio">
+			<div class="wrapper">
+				<h3>Portfolio</h3>
+			</div>
+		</section>
+		<!-- END OF PORTFOLIO SECTION -->
+
 		<script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
 		crossorigin='anonymous'></script>
-		<script src="public/scripts/main.js"></script>
+		<script src='https://cdn.jsdelivr.net/npm/typed.js@2.0.9'></script>
+		<script src='./public/scripts/wow-min.js'></script>
+		<script src="./public/scripts/main.js"></script>
 	</body>
 
 </html>
