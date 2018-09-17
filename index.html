@@ -20,10 +20,10 @@
 			<div class='overlay'></div>
 			<!-- START OF TOP NAV -->
 			<nav class='topNav'>
-				<img src='./assets/logo.png' alt='Site Logo' class='siteLogo'>
-				<div class="hamburgerMenu">
+				<img src='./assets/logo.png' alt='Polygon Site Logo' class='siteLogo'>
+				<div class='hamburgerMenu'>
 					<ul class='navBar'>
-						<li class="exitResponsive"><i class="fas fa-times"></i></li>
+						<li class='exitResponsive'><i class='fas fa-times'></i></li>
 						<li class='navItemHidden'><a href='#' class='navLinkHidden'>Home</a></li>
 						<li class='navItemHidden'><a href='#aboutMe' class='navLinkHidden'>About Me</a></li>
 						<li class='navItemHidden'><a href='#skills' class='navLinkHidden'>Skills</a></li>
@@ -96,10 +96,10 @@
 				<div class='portfolioContainer'>
 
 					<!-- START OF KARAOKE SETLIST PROJECT -->
-					<figure class='portfolioMockup first wow fadeInRightBig'>
+					<figure class='portfolioMockup first wow fadeIn'>
 						<img src='./assets/mock_up_project_6.png' alt='Project 6 mockup - Karaoke Setlist'>
 					</figure>
-					<article class='portfolioInfo first wow fadeInLeftBig'>
+					<article class='portfolioInfo first wow fadeIn'>
 						<h4>Karaoke Setlist</h4>
 						<div class='iconRow'>
 							<i class='devicon-react-original logo' title='React'></i>
@@ -120,7 +120,7 @@
 					<!-- END OF KARAOKE SETLIST PROJECT -->
 
 					<!-- START OF FOOD BLOG PROJECT -->
-					<article class='portfolioInfo second wow fadeInRightBig'>
+					<article class='portfolioInfo second wow fadeIn'>
 						<h4>Food Blog</h4>
 						<div class='iconRow'>
 							<i class='devicon-react-original logo' title='React'></i>
@@ -136,16 +136,16 @@
 							<a href='http://foodblog.christopherarsenault.com/' target='top'><button class='button buttonBlackHover'>View Live</button></a> <a href='https://github.com/clarsena/FoodBlog' target='top'><button class='button buttonBlackHover'>Github Repo</button></a>
 						</div>
 					</article>
-					<figure class='portfolioMockup second wow fadeInLeftBig'>
+					<figure class='portfolioMockup second wow fadeIn'>
 						<img src='./assets/mock_up_project_5.png' alt='Project 5 mockup - Food Blog'>
 					</figure>
 					<!-- END OF FOOD BLOG PROJECT -->
 
 					<!-- START OF RECIPE FINDER PROJECT -->
-					<figure class='portfolioMockup third wow fadeInRightBig'>
+					<figure class='portfolioMockup third wow fadeIn'>
 						<img src='./assets/mock_up_project_4.png' alt='Project 4 mockup - Recipe Finder'>
 					</figure>
-					<article class='portfolioInfo third wow fadeInLeftBig'>
+					<article class='portfolioInfo third wow fadeIn'>
 						<h4>Recipe Finder</h4>
 						<div class='iconRow'>
 							<i class='devicon-html5-plain logo' title='HTML5'></i>
@@ -166,7 +166,7 @@
 					<!-- END OF RECIPE FINDER PROJECT -->
 
 					<!-- START OF YAHTZEE PROJECT -->
-					<article class='portfolioInfo fourth wow fadeInRightBig'>
+					<article class='portfolioInfo fourth wow fadeIn'>
 						<h4>Yahtzee</h4>
 						<div class='iconRow'>
 							<i class='devicon-html5-plain logo' title='HTML5'></i>
@@ -181,16 +181,16 @@
 							<a href='http://christopherarsenault.com/yahtzee' target='top'><button class='button buttonBlackHover'>View Live</button></a> <a href='https://github.com/clarsena/Yahtzee' target='top'><button class='button buttonBlackHover'>Github Repo</button></a>
 						</div>
 					</article>
-					<figure class='portfolioMockup fourth wow fadeInLeftBig'>
+					<figure class='portfolioMockup fourth wow fadeIn'>
 						<img src='./assets/mock_up_project_3.png' alt='Project 3 mockup - Yahtzee'>
 					</figure>
 					<!-- END OF YAHTZEE PROJECT -->
 
 					<!-- START OF PSD CONVERSION PROJECT -->
-					<figure class='portfolioMockup fifth wow fadeInRightBig'>
+					<figure class='portfolioMockup fifth wow fadeIn'>
 						<img src='./assets/mock_up_project_2.png' alt='Project 2 mockup - Restaurant Website'>
 					</figure>
-					<article class='portfolioInfo fifth wow fadeInLeftBig'>
+					<article class='portfolioInfo fifth wow fadeIn'>
 						<h4>Responsive PSD Conversion</h4>
 						<div class='iconRow'>
 							<i class='devicon-html5-plain logo' title='HTML5'></i>
@@ -227,15 +227,15 @@
 						</div>
 					</article>
 					<article class='blogPostInfo wow fadeIn'>
+						<div class='blogPostImage'>
+							<img src='./assets/blog_2.jpg' alt='Binary code blue'>
+						</div>
 						<div class='blogPostText'>
 								<h4>Using CSS Custom Properties / CSS Variables</h4>
 								<h5>Posted: Sunday August 12, 2018</h5>
 								<p>Variables are ways to hold pieces of information that can be used throughout your code. They are an integral part of any programming language and are now something that we can also use within our CSS...</p>
 								<a href='https://medium.com/@christopher.arsenault82/using-css-custom-properties-css-variables-f524bd7e6d3f' target='top'><button class='button buttonBlackHover'>Read Post</button></a>
 							</div>
-						<div class='blogPostImage'>
-							<img src='./assets/blog_2.jpg' alt='Binary code blue'>
-						</div>
 					</article>
 					<article class='blogPostInfo wow fadeIn'>
 						<div class='blogPostImage'>
@@ -258,11 +258,11 @@
 		<section class='contactMe' id='contact'>
 			<div class='wrapper'>
 				<h3>Contact Me</h3>
-				<form action='' method='POST' class='contactForm wow bounceInLeft'>
-					<label for='contactName'>Name: </label><input type='text' class='contactName' name='contactName' id='contactName' placeholder='Please enter your name...'>
-					<label for='contactEmail'>Email: </label><input type='email' class='contactEmail' name='contactName' id='contactEmail' placeholder='Please enter your email...'>
-					<label for='contactSubject'>Subject: </label><input type='text' class='contactSubject' name='contactSubject' id='contactSubject' placeholder='Subject of your message...'>
-					<label for='contactMessage'>Message: </label><textarea name='contactMessage' class='contactMessage' id='contactMessage' cols='30' rows='10' placeholder='Please enter your message...'></textarea>
+				<form action='http://www.focuspocus.io/magic/94413fafb7898c5f8fbc168fb8c76367' method='POST' class='contactForm wow bounceInLeft'>
+					<label for='contactName'>Name: </label><input type='text' class='contactName' name='contactName' id='contactName' placeholder='Please enter your name...' required>
+					<label for='contactEmail'>Email: </label><input type='email' class='contactEmail' name='contactName' id='contactEmail' placeholder='Please enter your email...' required>
+					<label for='contactSubject'>Subject: </label><input type='text' class='contactSubject' name='contactSubject' id='contactSubject' placeholder='Subject of your message...' required>
+					<label for='contactMessage'>Message: </label><textarea name='contactMessage' class='contactMessage' id='contactMessage' cols='30' rows='10' placeholder='Please enter your message...' required></textarea>
 					<input type='submit' class='button buttonBlackHover' value='Send Message'>
 				</form>
 			</div>
@@ -273,10 +273,10 @@
 		<footer>
 			<div class='wrapper'>
 				<div class='socialIcons'>
-					<a href='https://twitter.com/clarsena' target='top'><i class='fab fa-twitter'></i></a>
-					<a href='https://www.facebook.com/clarsena' target='top'><i class='fab fa-facebook-f'></i></a>
-					<a href='https://www.instagram.com/nourish.our.souls/' target='top'><i class='fab fa-instagram'></i></a>
-					<a href='https://medium.com/@christopher.arsenault82' target='top'><i class='fab fa-medium-m'></i></a>
+					<a href='https://twitter.com/clarsena' target='top' title='Twitter'><i class='fab fa-twitter'></i></a>
+					<a href='https://www.facebook.com/clarsena' target='top' title='Facebook'><i class='fab fa-facebook-f'></i></a>
+					<a href='https://www.instagram.com/nourish.our.souls/' target='top' title='Instagram'><i class='fab fa-instagram'></i></a>
+					<a href='https://medium.com/@christopher.arsenault82' target='top' title='Medium'><i class='fab fa-medium-m'></i></a>
 				</div>
 				<div class='footerText'>
 					&copy; 2018 - Christopher Arsenault
@@ -293,8 +293,3 @@
 	</body>
 
 </html>
-
-		<!-- <div class='container'>
-				<img src='assets/trial.png' alt=''>
-				<div class='overlay'></div>
-		</div> -->

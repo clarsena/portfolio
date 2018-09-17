@@ -1,11 +1,11 @@
 const name = {
-    strings: ["Christopher Arsenault"],
+    strings: ['Christopher Arsenault'],
     typeSpeed: 40,
     showCursor: false
 }
 
 const title = {
-    strings: ["Front-End Web Developer"],
+    strings: ['Front-End Web Developer'],
     typeSpeed: 40,
     startDelay: 2000,
     cursorChar: '_',
@@ -25,14 +25,14 @@ app.init = () => {
 //  document.ready to call the init method once the page is finished loading
 $(function () {
     app.init();
-    $(".siteLogo").click(function() {
-        $(".hamburgerMenu").addClass("show");
+    $('.siteLogo').click(function() {
+        $('.hamburgerMenu').addClass('show');
     });
-    $(".exitResponsive").click(function() {
-        $(".hamburgerMenu").removeClass("show");
+    $('.exitResponsive').click(function() {
+        $('.hamburgerMenu').removeClass('show');
     });
-    $(".navLinkHidden").click(function() {
-        $(".hamburgerMenu").removeClass("show");
+    $('.navLinkHidden').click(function() {
+        $('.hamburgerMenu').removeClass('show');
     });
     
 });

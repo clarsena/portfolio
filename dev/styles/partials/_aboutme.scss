@@ -1,7 +1,7 @@
 //  START OF ABOUT ME STYLES
 
 .aboutMe {
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--white);
     color: var(--black);
     background: url('../../../assets/background-test.jpg');
@@ -10,7 +10,6 @@
     background-repeat: no-repeat;
     .wrapper {
         justify-content: space-evenly;
-        height: 100vh;
     }
 }
 
@@ -46,7 +45,20 @@
 /////////////////////////////////////////////
 
 @media (max-width: 650px) {
+    .aboutMe {
+        h3 {
+            margin: 25px 0;
+        }
+        padding: 0 15px;
+    }
     .headshot {
         display: none;
+    }
+    .aboutMeInfo {
+        padding: 20px;
+        margin-bottom: 25px;
+    }
+    .aboutMeText {
+        font-size: 1.4rem;
     }
 } //    END OF 650PX MEDIA QUERY

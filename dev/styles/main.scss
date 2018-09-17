@@ -76,6 +76,12 @@ figure {
 
 //  END OF GENERAL STYLES
 
+@media (max-width: 650px) {
+    h3 {
+        font-size: 3.5rem;
+    }
+}
+
 @import 'partials/header';
 @import 'partials/aboutme';
 @import 'partials/skills';
@@ -83,21 +89,3 @@ figure {
 @import 'partials/blogposts';
 @import 'partials/contact';
 @import 'partials/footer';
-
-// .container {
-//     position: relative;
-//     width: 100%;
-//     img {
-//         width: 100%;
-//     }
-// }
-
-// .overlay {
-//     position: absolute;
-//     width: 100%;
-//     background-color: rgba(22, 116, 209, 0.6);
-//     top: 0;
-//     right: 0;
-//     bottom: 0;
-//     left: 0;
-// }

@@ -1,5 +1,5 @@
 .contactMe {
-    height: 100vh;
+    min-height: 100vh;
     background: url('../../../assets/background-test.jpg');
     color: var(--black);
     background: url('../../../assets/background-test.jpg');
@@ -24,5 +24,17 @@
         width: 180px;
         margin-top: 25px;
         align-self: center;
+    }
+}
+
+@media (max-width: 650px) {
+    .contactMe {
+        h3 {
+            margin: 25px 0;
+        }
+    }
+    .contactForm {
+        margin-bottom: 25px;
+        padding: 0 15px;
     }
 }

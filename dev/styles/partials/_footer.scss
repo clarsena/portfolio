@@ -1,5 +1,6 @@
 footer {
     min-height: 10vh;
+    background-color: rgb(51, 51, 51);
     .wrapper {
         flex-direction: row;
         justify-content: space-between;
@@ -8,6 +9,8 @@ footer {
 }
 
 .socialIcons {
+    display: flex;
+    justify-content: baseline;
     font-size: 2.5rem;
     a {
         color: var(--white);
@@ -41,5 +44,14 @@ footer {
     }
     .footerText {
         font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .socialIcons {
+        a {
+            margin: 0;
+            font-size: 1.5rem;
+        }
     }
 }

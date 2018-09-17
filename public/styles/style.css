@@ -257,6 +257,10 @@ figure {
   margin: 0;
   padding: 0; }
 
+@media (max-width: 650px) {
+  h3 {
+    font-size: 3.5rem; } }
+
 .header {
   background: url("../../assets/hero_image.jpg");
   background-size: cover;
@@ -357,11 +361,14 @@ figure {
   .topNav {
     margin: 0;
     width: 100%;
-    padding-left: 25px;
+    padding-left: 5px;
+    padding-top: 5px;
     position: fixed;
     z-index: 10; }
   .siteLogo {
-    visibility: visible; }
+    visibility: visible;
+    width: 30px;
+    height: 30px; }
   .exitResponsive {
     display: flex;
     padding: 25px 0 0 25px;
@@ -384,17 +391,24 @@ figure {
     margin-bottom: 15px;
     text-align: center; }
   .navLinkHidden {
-    font-size: 5.0rem;
+    font-size: 3.5rem;
     width: 100%;
     padding: 15px;
     color: var(--white); }
   .typedText {
     margin-top: 75px; }
+  .headerName {
+    font-size: 3.5rem;
+    margin: 0 0 10px 0; }
+  .headerTitle {
+    font-size: 2.5rem;
+    color: var(--white);
+    font-weight: 200; }
   .readMore {
     display: none; } }
 
 .aboutMe {
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--white);
   color: var(--black);
   background: url("../../../assets/background-test.jpg");
@@ -402,8 +416,7 @@ figure {
   background-attachment: fixed;
   background-repeat: no-repeat; }
   .aboutMe .wrapper {
-    justify-content: space-evenly;
-    height: 100vh; }
+    justify-content: space-evenly; }
 
 .aboutMeInfo {
   padding: 50px;
@@ -426,11 +439,20 @@ figure {
   display: block; }
 
 @media (max-width: 650px) {
+  .aboutMe {
+    padding: 0 15px; }
+    .aboutMe h3 {
+      margin: 25px 0; }
   .headshot {
-    display: none; } }
+    display: none; }
+  .aboutMeInfo {
+    padding: 20px;
+    margin-bottom: 25px; }
+  .aboutMeText {
+    font-size: 1.4rem; } }
 
 .skills {
-  height: 100vh;
+  min-height: 100vh;
   background: url("../../../assets/texture.jpg"); }
 
 .skillsContainer {
@@ -454,7 +476,7 @@ figure {
       color: var(--black); }
   .logo p {
     font-size: 2.0rem;
-    font-family: "Lato", sans-serif;
+    font-family: 'Lato', sans-serif;
     margin: 10px 0;
     opacity: 0;
     transition: all 0.4s ease-in; }
@@ -464,13 +486,20 @@ figure {
 @media (max-width: 800px) {
   .skillsContainer {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 75px); } }
+    grid-template-rows: repeat(4, 75px);
+    grid-gap: 25px; } }
 
 @media (max-width: 650px) {
+  .skills {
+    padding: 0 15px; }
+    .skills h3 {
+      margin: 25px 0; }
   .logo {
     font-size: 5.0rem; }
     .logo p {
-      font-size: 1.6rem; } }
+      font-size: 1.6rem; }
+  .skillsContainer {
+    margin-bottom: 25px; } }
 
 @media (max-width: 550px) {
   .skillsContainer {
@@ -622,7 +651,7 @@ figure {
       height: 30px; } }
 
 .contactMe {
-  height: 100vh;
+  min-height: 100vh;
   background: url("../../../assets/background-test.jpg");
   color: var(--black);
   background: url("../../../assets/background-test.jpg");
@@ -645,14 +674,24 @@ figure {
     margin-top: 25px;
     align-self: center; }
 
+@media (max-width: 650px) {
+  .contactMe h3 {
+    margin: 25px 0; }
+  .contactForm {
+    margin-bottom: 25px;
+    padding: 0 15px; } }
+
 footer {
-  min-height: 10vh; }
+  min-height: 10vh;
+  background-color: #333333; }
   footer .wrapper {
     flex-direction: row;
     justify-content: space-between;
     min-height: 10vh; }
 
 .socialIcons {
+  display: flex;
+  justify-content: baseline;
   font-size: 2.5rem; }
   .socialIcons a {
     color: var(--white);
@@ -674,3 +713,8 @@ footer {
     font-size: 2.0rem; }
   .footerText {
     font-size: 1.2rem; } }
+
+@media (max-width: 400px) {
+  .socialIcons a {
+    margin: 0;
+    font-size: 1.5rem; } }
