@@ -20,6 +20,8 @@ body {
     align-items: center;
     margin: 0 auto;
     justify-content: space-evenly;
+    min-height: 100vh;
+    padding: 0 25px;
 }
 
 .button {
@@ -55,6 +57,16 @@ h3 {
     font-size: 5.0rem;
     text-transform: uppercase;
     letter-spacing: 2.0px;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 50%;
+        background: var(--primary);
+        bottom: -10px;
+        left: 25%;
+    }
 }
 
 figure {
@@ -62,16 +74,15 @@ figure {
     padding: 0;
 }
 
-// section {
-//     margin: 40px 0;
-// }
-
 //  END OF GENERAL STYLES
 
 @import 'partials/header';
 @import 'partials/aboutme';
 @import 'partials/skills';
 @import 'partials/portfolio';
+@import 'partials/blogposts';
+@import 'partials/contact';
+@import 'partials/footer';
 
 // .container {
 //     position: relative;

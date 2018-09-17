@@ -6,6 +6,10 @@
     min-height: 100vh;
 }
 
+.siteLogo {
+    visibility: hidden;
+}
+
 .topNav {
     width: 90%;
     padding-top: 30px;
@@ -18,6 +22,15 @@
     z-index: 3
 }
 
+.exitResponsive {
+	display: none;
+	font-size: 2.5rem;
+}
+
+.show.hamburgerMenu {
+    display: block;
+}
+
 .navBar {
     display: flex;
     flex-direction: flex-end;
@@ -26,23 +39,24 @@
     text-transform: uppercase;
     justify-content: flex-end;
     text-align: center;
-    li {
-        // padding-bottom: 10px;
-        margin-left: 40px;
-        letter-spacing: 2px;
-        a {
-            padding: 10px;
-            color: rgb(225, 225, 225);
-            border-bottom: 1px solid transparent;
-            transition: all .4s ease-in;
-            &:visited {
-                color: var(--white);
-            }
-            &:hover {
-                color: var(--primary);
-                border-color: var(--primary);
-            }
-        }
+}
+
+.navItemHidden {
+    margin-left: 40px;
+    letter-spacing: 2px;
+}
+
+.navLinkHidden {
+    padding: 10px;
+    color: var(--white);
+    border-bottom: 1px solid transparent;
+    transition: all .4s ease-in;
+    &:visited {
+        color: var(--white);
+    }
+    &:hover {
+        color: var(--primary);
+        border-color: var(--primary);
     }
 }
 
@@ -88,3 +102,75 @@
 }
 
 //  END OF HEADER STYLES
+
+/////////////////////////////////////////////
+//              MEDIA QUERIES              //
+/////////////////////////////////////////////
+
+@media (max-width: 1250px) {
+    .headerContent {
+        width: 90%;
+    }
+} //    END OF 1250PX MEDIA QUERY
+
+@media (max-width: 1125px) {
+    .navBar {
+        li {
+            margin-left: 10px;
+        }
+    }
+} //    END OF 1125PX MEDIA QUERY
+
+@media (max-width: 875px) {
+    .headerContent {
+        margin: 0;
+    }
+    .topNav {
+        margin: 0;
+        width: 100%;
+        padding-left: 25px;
+        position: fixed;
+        z-index: 10;
+    }
+    .siteLogo {
+        visibility: visible;
+    }
+    .exitResponsive {
+		display: flex;
+		padding: 25px 0 0 25px;
+		margin-bottom: 25px;
+    }
+    .hamburgerMenu {
+		display: none;
+		position: absolute;
+        top: 0;
+        right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba(0,0,0,0.99);
+        color: #FFFFFF;
+        height: 100vh;
+        width: 100%;
+    }
+    .navBar {
+        flex-direction: column;
+    }
+    .navItemHidden {
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .navLinkHidden {
+        font-size: 5.0rem;
+        width: 100%;
+        padding: 15px;
+        color: var(--white);
+    }
+    .typedText {
+        margin-top: 75px;
+    }
+
+    .readMore {
+        display: none;
+    }
+} //    END OF 875PX MEDIA QUERY

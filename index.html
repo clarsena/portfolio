@@ -20,15 +20,18 @@
 			<div class='overlay'></div>
 			<!-- START OF TOP NAV -->
 			<nav class='topNav'>
-				<img src='./assets/logo.png' alt='Site Logo'>
-				<ul class='navBar'>
-					<li><a href='#'>Home</a></li>
-					<li><a href='#aboutMe'>About Me</a></li>
-					<li><a href='#skills'>Skills</a></li>
-					<li><a href='#portfolio'>Portfolio</a></li>
-					<li><a href='#blog'>Blog</a></li>
-					<li><a href='#contact'>Contact</a></li>
-				</ul>
+				<img src='./assets/logo.png' alt='Site Logo' class='siteLogo'>
+				<div class="hamburgerMenu">
+					<ul class='navBar'>
+						<li class="exitResponsive"><i class="fas fa-times"></i></li>
+						<li class='navItemHidden'><a href='#' class='navLinkHidden'>Home</a></li>
+						<li class='navItemHidden'><a href='#aboutMe' class='navLinkHidden'>About Me</a></li>
+						<li class='navItemHidden'><a href='#skills' class='navLinkHidden'>Skills</a></li>
+						<li class='navItemHidden'><a href='#portfolio' class='navLinkHidden'>Portfolio</a></li>
+						<li class='navItemHidden'><a href='#blog' class='navLinkHidden'>Blog</a></li>
+						<li class='navItemHidden'><a href='#contact' class='navLinkHidden'>Contact</a></li>
+					</ul>
+				</div>
 			</nav>
 			<!-- END OF TOP NAV -->
 			<div class='headerContent'>
@@ -36,7 +39,7 @@
 					<h1 class='headerName' id='typed-name'></h1>
 					<h2 class='headerTitle' id='typed-title'></h2>
 				</div>
-				<a href='#aboutMe'><button class='button toAbout'>Read More</button></a>
+				<a href='#aboutMe'><button class='button readMore'>Read More</button></a>
 			</div>
 		</header>
 		<!-- END OF HEADER SECTION -->
@@ -46,7 +49,7 @@
 			<div class='wrapper'>
 				<h3>About Me</h3>
 				<figure class='aboutMeInfo wow fadeIn'>
-					<img src='./assets/headshot.jpg' alt=''>
+					<img src='./assets/headshot.jpg' class='headshot' alt='Headshot picture of myself in a blue polo'>
 					<div class='aboutMeText'>
 						<p> Hi, I'm Christopher! I'm a front-end web developer located in the Mississauga area. Before I dove head-first into my passion for coding, I was a Call Center Manager at a market research company. My time there taught me not only time management and multi-tasking skills but also how to manage a team and work better with others. I have always loved problem solving and logic puzzles, so I found the transition into coding to be a natural fit for me. I've been fascinated with computers and tech world since I was a little kid and cannot wait to continue my learning and growing in the web development world.</p>
 
@@ -56,7 +59,7 @@
 						</p>
 					</div>
 				</figure>
-				<a href='#skills'><button class='button buttonBlackHover toSkills'>Read More</button></a>
+				<a href='#skills'><button class='button buttonBlackHover readMore'>Read More</button></a>
 			</div>
 		</section>
 		<!-- END OF ABOUT ME SECTION -->
@@ -75,14 +78,14 @@
 						<i class='devicon-github-plain logo' title='Github'><p>Github</p></i>
 						<i class='devicon-gulp-plain logo' title='Gulp'><p>Gulp</p></i>
 						<i class='devicon-sass-original logo' title='SASS'><p>SASS</p></i>
-						<i class="fab fa-npm logo" title='NPM'><p>NPM</p></i>
+						<i class='fab fa-npm logo' title='NPM'><p>NPM</p></i>
 						<i class='devicon-visualstudio-plain logo' title='VS Code'><p>VS Code</p></i>
 						<i class='devicon-codeigniter-plain logo' title='Firebase'><p>Firebase</p></i>
 						<i class='devicon-slack-plain logo' title='Slack'><p>Slack</p></i>
 						<i class='devicon-trello-plain logo' title='Trello'><p>Trello</p></i>
 						<i class='fas fa-mobile-alt logo' title='Responsive Design'><p>Responsive Design</p></i>
 					</div>
-					<a href='#portfolio' class='wow fadeInLeft'><button class='button toPortfolio'>Read More</button></a>
+					<a href='#portfolio' class='wow fadeInLeft'><button class='button readMore'>Read More</button></a>
 				</div>
 		</section>
 		<!-- END OF SKILLS SECTION -->
@@ -93,16 +96,16 @@
 				<div class='portfolioContainer'>
 
 					<!-- START OF KARAOKE SETLIST PROJECT -->
-					<figure class='portfolioMockup wow fadeInRightBig'>
+					<figure class='portfolioMockup first wow fadeInRightBig'>
 						<img src='./assets/mock_up_project_6.png' alt='Project 6 mockup - Karaoke Setlist'>
 					</figure>
-					<article class='portfolioInfo wow fadeInLeftBig'>
+					<article class='portfolioInfo first wow fadeInLeftBig'>
 						<h4>Karaoke Setlist</h4>
 						<div class='iconRow'>
 							<i class='devicon-react-original logo' title='React'></i>
 							<i class='devicon-git-plain logo' title='Git'></i>
 							<i class='devicon-github-plain logo' title='Github'></i>
-							<i class="fab fa-npm logo" title='NPM'></i>
+							<i class='fab fa-npm logo' title='NPM'></i>
 							<i class='devicon-codeigniter-plain logo' title='Firebase'></i>
 							<i class='devicon-html5-plain logo' title='HTML5'></i>
 							<i class='devicon-css3-plain logo' title='CSS3'></i>
@@ -117,11 +120,11 @@
 					<!-- END OF KARAOKE SETLIST PROJECT -->
 
 					<!-- START OF FOOD BLOG PROJECT -->
-					<article class='portfolioInfo wow fadeInRightBig'>
+					<article class='portfolioInfo second wow fadeInRightBig'>
 						<h4>Food Blog</h4>
 						<div class='iconRow'>
 							<i class='devicon-react-original logo' title='React'></i>
-							<i class="fab fa-npm logo" title='NPM'></i>
+							<i class='fab fa-npm logo' title='NPM'></i>
 							<i class='devicon-codeigniter-plain logo' title='Firebase'></i>
 							<i class='devicon-html5-plain logo' title='HTML5'></i>
 							<i class='devicon-css3-plain logo' title='CSS3'></i>
@@ -133,16 +136,16 @@
 							<a href='http://foodblog.christopherarsenault.com/' target='top'><button class='button buttonBlackHover'>View Live</button></a> <a href='https://github.com/clarsena/FoodBlog' target='top'><button class='button buttonBlackHover'>Github Repo</button></a>
 						</div>
 					</article>
-					<figure class='portfolioMockup wow fadeInLeftBig'>
+					<figure class='portfolioMockup second wow fadeInLeftBig'>
 						<img src='./assets/mock_up_project_5.png' alt='Project 5 mockup - Food Blog'>
 					</figure>
 					<!-- END OF FOOD BLOG PROJECT -->
 
 					<!-- START OF RECIPE FINDER PROJECT -->
-					<figure class='portfolioMockup wow fadeInRightBig'>
+					<figure class='portfolioMockup third wow fadeInRightBig'>
 						<img src='./assets/mock_up_project_4.png' alt='Project 4 mockup - Recipe Finder'>
 					</figure>
-					<article class='portfolioInfo wow fadeInLeftBig'>
+					<article class='portfolioInfo third wow fadeInLeftBig'>
 						<h4>Recipe Finder</h4>
 						<div class='iconRow'>
 							<i class='devicon-html5-plain logo' title='HTML5'></i>
@@ -163,7 +166,7 @@
 					<!-- END OF RECIPE FINDER PROJECT -->
 
 					<!-- START OF YAHTZEE PROJECT -->
-					<article class='portfolioInfo wow fadeInRightBig'>
+					<article class='portfolioInfo fourth wow fadeInRightBig'>
 						<h4>Yahtzee</h4>
 						<div class='iconRow'>
 							<i class='devicon-html5-plain logo' title='HTML5'></i>
@@ -178,16 +181,16 @@
 							<a href='http://christopherarsenault.com/yahtzee' target='top'><button class='button buttonBlackHover'>View Live</button></a> <a href='https://github.com/clarsena/Yahtzee' target='top'><button class='button buttonBlackHover'>Github Repo</button></a>
 						</div>
 					</article>
-					<figure class='portfolioMockup wow fadeInLeftBig'>
+					<figure class='portfolioMockup fourth wow fadeInLeftBig'>
 						<img src='./assets/mock_up_project_3.png' alt='Project 3 mockup - Yahtzee'>
 					</figure>
 					<!-- END OF YAHTZEE PROJECT -->
 
 					<!-- START OF PSD CONVERSION PROJECT -->
-					<figure class='portfolioMockup wow fadeInRightBig'>
+					<figure class='portfolioMockup fifth wow fadeInRightBig'>
 						<img src='./assets/mock_up_project_2.png' alt='Project 2 mockup - Restaurant Website'>
 					</figure>
-					<article class='portfolioInfo wow fadeInLeftBig'>
+					<article class='portfolioInfo fifth wow fadeInLeftBig'>
 						<h4>Responsive PSD Conversion</h4>
 						<div class='iconRow'>
 							<i class='devicon-html5-plain logo' title='HTML5'></i>
@@ -206,6 +209,81 @@
 			</div>
 		</section>
 		<!-- END OF PORTFOLIO SECTION -->
+
+		<!-- START OF BLOG POSTS SECTION -->
+		<section class='blogPosts' id='blog'>
+			<div class='wrapper'>
+				<h3>Blog Posts</h3>
+				<div class='blogPostContainer'>
+					<article class='blogPostInfo wow fadeIn'>
+						<div class='blogPostImage'>
+							<img src='./assets/blog_1.jpg' alt='Git logo'>
+						</div>
+						<div class='blogPostText'>
+							<h4>Getting Started with Git  -  The Basics</h4>
+							<h5>Posted: Sunday August 5, 2018</h5>
+							<p>Git is currently one of, if not, the most widely used version control systems around. It is currently released under the open source license, making it free to use but what really makes it stand out is its branching model...</p>
+							<a href='https://medium.com/@christopher.arsenault82/getting-started-with-git-the-basics-64a0a48727f6' target='top'><button class='button buttonBlackHover'>Read Post</button></a>
+						</div>
+					</article>
+					<article class='blogPostInfo wow fadeIn'>
+						<div class='blogPostText'>
+								<h4>Using CSS Custom Properties / CSS Variables</h4>
+								<h5>Posted: Sunday August 12, 2018</h5>
+								<p>Variables are ways to hold pieces of information that can be used throughout your code. They are an integral part of any programming language and are now something that we can also use within our CSS...</p>
+								<a href='https://medium.com/@christopher.arsenault82/using-css-custom-properties-css-variables-f524bd7e6d3f' target='top'><button class='button buttonBlackHover'>Read Post</button></a>
+							</div>
+						<div class='blogPostImage'>
+							<img src='./assets/blog_2.jpg' alt='Binary code blue'>
+						</div>
+					</article>
+					<article class='blogPostInfo wow fadeIn'>
+						<div class='blogPostImage'>
+							<img src='./assets/blog_3.jpg' alt='VS Code logo'>
+						</div>
+						<div class='blogPostText'>
+							<h4>Making Your Code Editor Feel Like Home  - Customizing VS Code</h4>
+							<h5>Posted: Tuesday September 11, 2018</h5>
+							<p>As developers / coders, we spend a lot of time in our editor of choice, heck, we practically live there. Why not make it more comfortable, dress it up as you please and make it somewhere you enjoy spending all that time...</p>
+							<a href='https://medium.com/datadriveninvestor/making-your-code-editor-feel-like-home-customizing-vs-code-b858d4938cb' target='top'><button class='button buttonBlackHover'>Read Post</button></a>
+						</div>
+					</article>
+				</div>
+				<a href='#contact'><button class='button readMore'>Read More</button></a>
+			</div>
+		</section>
+		<!-- END OF BLOG POSTS SECTION -->
+
+		<!-- START OF CONTACT SECTION -->
+		<section class='contactMe' id='contact'>
+			<div class='wrapper'>
+				<h3>Contact Me</h3>
+				<form action='' method='POST' class='contactForm wow bounceInLeft'>
+					<label for='contactName'>Name: </label><input type='text' class='contactName' name='contactName' id='contactName' placeholder='Please enter your name...'>
+					<label for='contactEmail'>Email: </label><input type='email' class='contactEmail' name='contactName' id='contactEmail' placeholder='Please enter your email...'>
+					<label for='contactSubject'>Subject: </label><input type='text' class='contactSubject' name='contactSubject' id='contactSubject' placeholder='Subject of your message...'>
+					<label for='contactMessage'>Message: </label><textarea name='contactMessage' class='contactMessage' id='contactMessage' cols='30' rows='10' placeholder='Please enter your message...'></textarea>
+					<input type='submit' class='button buttonBlackHover' value='Send Message'>
+				</form>
+			</div>
+		</section>
+		<!-- END OF CONTACT SECTION -->
+
+		<!-- START OF FOOTER -->
+		<footer>
+			<div class='wrapper'>
+				<div class='socialIcons'>
+					<a href='https://twitter.com/clarsena' target='top'><i class='fab fa-twitter'></i></a>
+					<a href='https://www.facebook.com/clarsena' target='top'><i class='fab fa-facebook-f'></i></a>
+					<a href='https://www.instagram.com/nourish.our.souls/' target='top'><i class='fab fa-instagram'></i></a>
+					<a href='https://medium.com/@christopher.arsenault82' target='top'><i class='fab fa-medium-m'></i></a>
+				</div>
+				<div class='footerText'>
+					&copy; 2018 - Christopher Arsenault
+				</div>
+			</div>
+		</footer>
+		<!-- END OF FOOTER -->
 
 		<script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
 		crossorigin='anonymous'></script>

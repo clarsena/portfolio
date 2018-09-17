@@ -1,3 +1,5 @@
+//  START OF ABOUT ME STYLES
+
 .aboutMe {
     height: 100vh;
     background-color: var(--white);
@@ -18,19 +20,33 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    img {
-        width: 250px;
-        height: 250px;
-        margin-bottom: 25px;
-        display: block;
-    }
-    .aboutMeText {
-        flex: 0 1 calc(70% - 50px);
-        p {
-            margin-bottom: 10px;
-            &:last-child {
-                margin-bottom: 0;
-            }
+}
+
+.aboutMeText {
+    flex: 0 1 calc(70% - 50px);
+    p {
+        margin-bottom: 10px;
+        &:last-child {
+            margin-bottom: 0;
         }
     }
 }
+
+.headshot {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 25px;
+    display: block;
+}
+
+//  END OF ABOUT ME STYLES
+
+/////////////////////////////////////////////
+//              MEDIA QUERIES              //
+/////////////////////////////////////////////
+
+@media (max-width: 650px) {
+    .headshot {
+        display: none;
+    }
+} //    END OF 650PX MEDIA QUERY

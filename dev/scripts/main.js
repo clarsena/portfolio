@@ -25,4 +25,14 @@ app.init = () => {
 //  document.ready to call the init method once the page is finished loading
 $(function () {
     app.init();
+    $(".siteLogo").click(function() {
+        $(".hamburgerMenu").addClass("show");
+    });
+    $(".exitResponsive").click(function() {
+        $(".hamburgerMenu").removeClass("show");
+    });
+    $(".navLinkHidden").click(function() {
+        $(".hamburgerMenu").removeClass("show");
+    });
+    
 });

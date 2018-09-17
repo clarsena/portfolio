@@ -1,9 +1,8 @@
+//  START OF SKILLS STYLES
+
 .skills {
     height: 100vh;
     background: url('../../../assets/texture.jpg');
-    .wrapper{
-        height: 100vh;
-    }
 }
 
 .skillsContainer {
@@ -28,7 +27,7 @@
             color: var(--black);
         }
     }
-    P {
+    p {
         font-size: 2.0rem;
         font-family: "Lato", sans-serif;
         margin: 10px 0;
@@ -39,3 +38,33 @@
         }
     }
 }
+
+//  END OF SKILLS STYLES
+
+/////////////////////////////////////////////
+//              MEDIA QUERIES              //
+/////////////////////////////////////////////
+
+@media (max-width: 800px) {
+    .skillsContainer {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 75px);
+    }
+} //    END OF 800PX MEDIA QUERY
+
+@media (max-width: 650px) {
+    .logo {
+        font-size: 5.0rem;
+        p {
+            font-size: 1.6rem;
+        }
+    }
+} //    END OF 650PX MEDIA QUERY
+
+@media (max-width: 550px) {
+    .skillsContainer {
+        padding: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 75px);
+    }
+} //    END OF 500PX MEDIA QUERY

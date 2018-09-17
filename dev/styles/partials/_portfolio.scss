@@ -1,12 +1,13 @@
+//  START OF PORTFOLIO STYLES
+
 .portfolio {
     background-color: var(--white);
     min-height: 100vh;
-    padding: 40px 0;
+    padding: 60px 0;
     h3 {
         margin-bottom: 40px;
     }
     .wrapper {
-        min-height: 100vh;
         justify-content: space-evenly;
     }
 }
@@ -44,7 +45,13 @@
 }
 
 .iconRow {
-    margin: 25px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 25px;
+    i {
+        margin-bottom: 25px;
+    }
 }
 
 .buttonRow {
@@ -55,3 +62,90 @@
         }
     }
 }
+
+//  END OF PORTFOLIO STYLES
+
+/////////////////////////////////////////////
+//              MEDIA QUERIES              //
+/////////////////////////////////////////////
+
+@media (max-width: 900px) {
+    .portfolioContainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10, minmax(100px, 300px), 1fr);
+        grid-gap: 25px;
+        width: 90%;
+    }
+
+    .portfolioMockUp {
+        &.first {
+            grid-row: 1;
+        }
+        &.second {
+            grid-row: 3;
+        }
+        &.third {
+            grid-row: 5;
+        }
+        &.fourth {
+            grid-row: 7;
+        }
+        &.fifth {
+            grid-row: 9;
+        }
+    }
+    
+    .portfolioInfo {
+        &.first {
+            grid-row: 2;
+        }
+        &.second {
+            grid-row: 4;
+        }
+        &.third {
+            grid-row: 6;
+        }
+        &.fourth {
+            grid-row: 8;
+        }
+        &.fifth {
+            grid-row: 10;
+        }
+    }
+} //    END OF 900PX MEDIA QUERY
+
+@media (max-width: 550px) {
+    .portfolioContainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .portfolioInfo {
+        &.first {
+            grid-row: 1;
+        }
+        &.second {
+            grid-row: 2;
+        }
+        &.third {
+            grid-row: 3;
+        }
+        &.fourth {
+            grid-row: 4;
+        }
+        &.fifth {
+            grid-row: 5;
+        }
+        .button {
+            &:first-child {
+                margin-bottom: 10px;
+            }
+
+        }
+    }
+
+    .portfolioMockup {
+        display: none;
+    }
+
+} //    END OF 550PX MEDIA QUERY

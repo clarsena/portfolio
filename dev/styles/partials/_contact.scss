@@ -1,0 +1,28 @@
+.contactMe {
+    height: 100vh;
+    background: url('../../../assets/background-test.jpg');
+    color: var(--black);
+    background: url('../../../assets/background-test.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    input, textarea {
+        margin-bottom: 15px;
+        padding: 5px 5px 0 5px;
+        width: 100%;
+    }
+    textarea {
+        margin-bottom: 0;
+    }
+    .button {
+        width: 180px;
+        margin-top: 25px;
+        align-self: center;
+    }
+}
