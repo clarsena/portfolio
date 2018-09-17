@@ -1,7 +1,57 @@
 .portfolio {
     background-color: var(--white);
     min-height: 100vh;
+    padding: 40px 0;
+    h3 {
+        margin-bottom: 40px;
+    }
     .wrapper {
         min-height: 100vh;
+        justify-content: space-evenly;
+    }
+}
+
+.portfolioContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 300px);
+    align-items: safe center;
+    grid-gap: 50px;
+}
+
+.portfolioMockup {
+    text-align: center;
+    padding: 10px;
+    img {
+        max-width: 100%;
+        height: 100%;
+    }
+}
+
+.portfolioInfo {
+    text-align: center;
+    color: var(--black);
+    i {
+        font-size: 3.5rem;
+        margin-left: 20px;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+    h4 {
+        font-size: 2.2rem;
+    }
+}
+
+.iconRow {
+    margin: 25px 0;
+}
+
+.buttonRow {
+    margin-top: 15px;
+    button {
+        &:first-child {
+            margin-right: 10px;
+        }
     }
 }

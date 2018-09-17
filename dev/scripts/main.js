@@ -8,6 +8,7 @@ const title = {
     strings: ["Front-End Web Developer"],
     typeSpeed: 40,
     startDelay: 2000,
+    cursorChar: '_',
     showCursor: false
 }
   

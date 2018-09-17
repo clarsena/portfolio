@@ -2,7 +2,7 @@
     height: 100vh;
     background-color: var(--white);
     color: var(--black);
-    background: url('../../../assets/background.jpg');
+    background: url('../../../assets/background-test.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -32,12 +32,5 @@
                 margin-bottom: 0;
             }
         }
-    }
-}
-
-.toSkills {
-    &:hover {
-        background-color: var(--black);
-        color: var(--white);
     }
 }

@@ -39,6 +39,13 @@ body {
     }
 }
 
+.buttonBlackHover {
+    &:hover {
+        background-color: var(--black);
+        color: var(--white);
+    }
+}
+
 h1, h2, h3, h4, h5, h6 {
     color: var(--primary);
 }
@@ -48,6 +55,11 @@ h3 {
     font-size: 5.0rem;
     text-transform: uppercase;
     letter-spacing: 2.0px;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
 }
 
 // section {
